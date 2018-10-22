@@ -1,7 +1,9 @@
 package com.github.xingli13;
 
+import com.github.xingli13.downloader.MyHttpClientDownloader;
 import com.github.xingli13.func.BasicUrls;
 import com.github.xingli13.processor.AwesomeJavaProcessor;
+import org.apache.log4j.BasicConfigurator;
 import us.codecraft.webmagic.Spider;
 
 /**
@@ -9,9 +11,11 @@ import us.codecraft.webmagic.Spider;
  */
 public class Main {
 	public static void main(String[] args){
+		BasicConfigurator.configure();
 		Spider.create(new AwesomeJavaProcessor())
+				.setDownloader(new MyHttpClientDownloader())
 				.addUrl((BasicUrls.getUrlLines()).toArray(new String[BasicUrls.getUrlLines().size()]))
-				.thread(1)
+				.thread(5)
 				.run();
 	}
 	// 获取readme.md开始的所有链接 map<,set<AwesomeItem>> 或者set<AwesomeItem>
