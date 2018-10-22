@@ -1,5 +1,6 @@
 package com.github.xingli13;
 
+import com.github.xingli13.func.BasicUrls;
 import com.github.xingli13.processor.AwesomeJavaProcessor;
 import us.codecraft.webmagic.Spider;
 
@@ -9,7 +10,7 @@ import us.codecraft.webmagic.Spider;
 public class Main {
 	public static void main(String[] args){
 		Spider.create(new AwesomeJavaProcessor())
-				.addUrl("https://github.com/akullpp/awesome-java/blob/master/awesome-java.md")
+				.addUrl(((String[]) BasicUrls.getUrlLines().toArray()))
 				.thread(1)
 				.run();
 	}
