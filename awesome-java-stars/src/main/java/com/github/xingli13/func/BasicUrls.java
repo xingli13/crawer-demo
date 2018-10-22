@@ -36,9 +36,9 @@ public class BasicUrls {
 			if (tmp.startsWith("-")){
 				String url = tmp.substring(tmp.indexOf("(")+1, tmp.indexOf(")"));
 				if (!url.contains("github.com")) {
+					continue;
 //					String name = tmp.substring(tmp.indexOf("[") + 1, tmp.indexOf("]"));
 //					url = GITHUB_BING_URL + name.replace(" ", "+");
-					continue;
 				}
 //				urlLines[len++] = url;
 				urlLines.add(url);
