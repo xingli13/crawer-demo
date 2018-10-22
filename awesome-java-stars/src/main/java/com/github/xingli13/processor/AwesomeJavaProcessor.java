@@ -19,13 +19,14 @@ public class AwesomeJavaProcessor implements PageProcessor {
 		String url = page.getUrl().toString();
 		// get info
 		if (url.contains("bing")) {
-			log.info(url);
+			System.out.println(url);
 		} else {
-			log.info("url: "+url + " stars: "+page.getHtml().xpath(""));
+			// TODO: 2018/10/22 to entity
+			String star = page.getHtml().xpath("//ul[@class='pagehead-actions']/li[1]//a[@class='social-count js-social-count']/text()").toString();
+			String fork = page.getHtml().xpath("//ul[@class='pagehead-actions']/li[2]//a[@class='social-count']/text()").toString();
+
+			System.out.println("url: " + url + " stars: " + star + " fork: " + fork);
 		}
-//		if (url.contains("awesome-java")) {
-//
-//		}
 	}
 
 	@Override

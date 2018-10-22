@@ -10,7 +10,7 @@ import us.codecraft.webmagic.Spider;
 public class Main {
 	public static void main(String[] args){
 		Spider.create(new AwesomeJavaProcessor())
-				.addUrl(((String[]) BasicUrls.getUrlLines().toArray()))
+				.addUrl((BasicUrls.getUrlLines()).toArray(new String[BasicUrls.getUrlLines().size()]))
 				.thread(1)
 				.run();
 	}
