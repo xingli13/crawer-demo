@@ -22,7 +22,8 @@ public class AwesomeJavaProcessor implements PageProcessor {
 			System.out.println(url);
 		} else {
 			// TODO: 2018/10/22 to entity
-			String star = page.getHtml().xpath("//ul[@class='pagehead-actions']/li[1]//a[@class='social-count js-social-count']/text()").toString();
+//			String star = page.getHtml().xpath("//ul[@class='pagehead-actions']/li[1]//a[@class='social-count js-social-count']/text()").toString();
+			String star = page.getHtml().xpath("//*[@id=\"js-repo-pjax-container\"]/div[1]/div/ul/li[2]/a[2]/text()").toString();
 			String fork = page.getHtml().xpath("//ul[@class='pagehead-actions']/li[2]//a[@class='social-count']/text()").toString();
 
 			System.out.println("url: " + url + " stars: " + star + " fork: " + fork);

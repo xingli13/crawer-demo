@@ -3,7 +3,7 @@ package com.github.xingli13;
 import com.github.xingli13.downloader.MyHttpClientDownloader;
 import com.github.xingli13.func.BasicUrls;
 import com.github.xingli13.processor.AwesomeJavaProcessor;
-import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.*;
 import us.codecraft.webmagic.Spider;
 
 /**
@@ -11,7 +11,13 @@ import us.codecraft.webmagic.Spider;
  */
 public class Main {
 	public static void main(String[] args){
-		BasicConfigurator.configure();
+		// logger
+		Logger root = Logger.getRootLogger();
+		root.setLevel(Level.INFO);
+		root.addAppender(new ConsoleAppender(
+				new PatternLayout(PatternLayout.TTCC_CONVERSION_PATTERN)));
+
+
 		Spider.create(new AwesomeJavaProcessor())
 				.setDownloader(new MyHttpClientDownloader())
 				.addUrl((BasicUrls.getUrlLines()).toArray(new String[BasicUrls.getUrlLines().size()]))

@@ -43,16 +43,18 @@ public class MyHttpClientGenerator {
 	private PoolingHttpClientConnectionManager connectionManager;
 
 	public MyHttpClientGenerator() {
-		Registry<ConnectionSocketFactory> reg = RegistryBuilder.create().register("http", PlainConnectionSocketFactory.INSTANCE).register("https", this.buildSSLConnectionSocketFactory()).build();
+		RegistryBuilder<ConnectionSocketFactory> regBuilder = RegistryBuilder.create();
+		Registry<ConnectionSocketFactory> reg = regBuilder.register("http", PlainConnectionSocketFactory.INSTANCE)
+				.register("https", this.buildSSLConnectionSocketFactory()).build();
 		this.connectionManager = new PoolingHttpClientConnectionManager(reg);
 		this.connectionManager.setDefaultMaxPerRoute(100);
 	}
 
-	private SSLConnectionSocketFactory buildSSLConnectionSocketFactory() {
+	private ConnectionSocketFactory buildSSLConnectionSocketFactory() {
 		try {
 			return new SSLConnectionSocketFactory(this.createIgnoreVerifySSL(), new String[]{"SSLv3", "TLSv1", "TLSv1.1", "TLSv1.2"},
 					null,
-					new DefaultHostnameVerifier()));
+					new DefaultHostnameVerifier());
 		} catch (KeyManagementException var2) {
 			this.logger.error("ssl connection fail", var2);
 		} catch (NoSuchAlgorithmException var3) {

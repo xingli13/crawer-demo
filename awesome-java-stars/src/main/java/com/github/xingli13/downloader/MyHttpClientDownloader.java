@@ -1,9 +1,5 @@
 package com.github.xingli13.downloader;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.annotation.ThreadSafe;
@@ -17,7 +13,6 @@ import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.downloader.AbstractDownloader;
-import us.codecraft.webmagic.downloader.HttpClientGenerator;
 import us.codecraft.webmagic.downloader.HttpClientRequestContext;
 import us.codecraft.webmagic.downloader.HttpUriRequestConverter;
 import us.codecraft.webmagic.proxy.Proxy;
@@ -25,6 +20,11 @@ import us.codecraft.webmagic.proxy.ProxyProvider;
 import us.codecraft.webmagic.selector.PlainText;
 import us.codecraft.webmagic.utils.CharsetUtils;
 import us.codecraft.webmagic.utils.HttpClientUtils;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.HashMap;
+import java.util.Map;
 
 @ThreadSafe
 public class MyHttpClientDownloader extends AbstractDownloader {
