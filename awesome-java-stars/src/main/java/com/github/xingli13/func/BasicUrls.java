@@ -5,10 +5,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by xingli13 on 2018/10/19.
+ * @author xingli13
  */
 public class BasicUrls {
 	private static Set<String> urlLines = new HashSet<>();
+	private static final String GITHUB_BING_URL = "https://www.bing.com/search?q=site%3Agithub.com+";
 
 	public static Set<String> getUrlLines() {
 		return urlLines;
@@ -25,6 +26,10 @@ public class BasicUrls {
 			if (tmp.startsWith("-")){
 				lines ++;
 				String url = tmp.substring(tmp.indexOf("(")+1, tmp.indexOf(")"));
+				if (!url.contains("github.com")) {
+//					String name =
+//					url = GITHUB_BING_URL +
+				}
 				urlLines.add(url);
 			}
 		}

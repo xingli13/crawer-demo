@@ -12,6 +12,7 @@ import static org.assertj.core.api.Assertions.*;
  */
 public class BasicUrlsTest {
 	int lines;
+	boolean contain;
 
 	@Given("^I read the \"([^\"]*)\"$")
 	public void i_read_the(String arg1) throws Exception {
@@ -30,4 +31,17 @@ public class BasicUrlsTest {
 		// Write code here that turns the phrase above into concrete actions
 		assertThat(lines).isEqualTo(arg1);
 	}
+
+	@When("^I ask whether it contains \"([^\"]*)\"$")
+	public void i_ask_whether_it_contains(String arg1) throws Exception {
+		// Write code here that turns the phrase above into concrete actions
+		contain = BasicUrls.getUrlLines().contains(arg1);
+	}
+
+	@Then("^I get the answer \"([^\"]*)\"$")
+	public void i_get_the_answer(String arg1) throws Exception {
+		// Write code here that turns the phrase above into concrete actions
+		assertThat(arg1).isEqualTo(contain? "yes":"no");
+	}
+
 }

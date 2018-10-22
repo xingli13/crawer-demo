@@ -58,7 +58,7 @@
 - [NullAway](https://github.com/uber/NullAway) - Eliminates NullPointerExceptions with low build-time overhead.
 - [PMD](https://github.com/pmd/pmd) - Source code analysis for finding bad coding practices.
 - [SonarJava](https://github.com/SonarSource/sonar-java) - Static analyzer for SonarQube & SonarLint.
-- [Sourcetrail ![c]](https://www.sourcetrail.com) - Visual source code navigator.
+- [Sourcetrail](https://www.sourcetrail.com) - Visual source code navigator.
 - [Spoon](https://github.com/INRIA/spoon) - Library for analyzing and transforming Java source code.
 - [Spotbugs](https://github.com/spotbugs/spotbugs) - Static analysis of bytecode to find potential bugs.
 
@@ -66,7 +66,7 @@
 
 *Frameworks and tools that enable code coverage metrics collection for test suites.*
 
-- [Clover ![c]](https://www.atlassian.com/software/clover/overview) - Relies on source-code instrumentation instead of bytecode instrumentation.
+- [Clover](https://www.atlassian.com/software/clover/overview) - Relies on source-code instrumentation instead of bytecode instrumentation.
 - [Cobertura](https://cobertura.github.io/cobertura) - Relies on offline (or static) bytecode instrumentation and class loading to collect code coverage metrics.
 - [JaCoCo](http://eclemma.org/jacoco) - Framework that enables collection of code coverage metrics, using both offline and runtime bytecode instrumentation.
 
@@ -208,7 +208,7 @@
 - [HotswapAgent](https://github.com/HotswapProjects/HotswapAgent) - Unlimited runtime class and resource redefinition.
 - [JavaParser](https://github.com/javaparser/javaparser) - Parse, modify and generate Java code.
 - [JavaSymbolSolver](https://github.com/javaparser/javasymbolsolver) - A symbol solver for Java.
-- [JRebel ![c]](https://zeroturnaround.com/software/jrebel) - Instantly reloads code and configuration changes without redeploys.
+- [JRebel](https://zeroturnaround.com/software/jrebel) - Instantly reloads code and configuration changes without redeploys.
 - [NoException](https://noexception.machinezoo.com) - Allows checked exceptions in functional interfaces and converts exceptions to Optional return.
 
 ### Distributed Applications
@@ -222,7 +222,7 @@
 - [Axon Framework](http://www.axonframework.org) - Framework for creating CQRS applications.
 - [Dropwizard Circuit Breaker](https://github.com/mtakaki/dropwizard-circuitbreaker) - Circuit breaker design pattern for Dropwizard.
 - [Failsafe](https://github.com/jhalterman/failsafe) - Simple failure handling with retries and circuit breakers.
-- [Hazelcast ![c]](https://hazelcast.org) - Highly scalable in-memory datagrid with a free open-source version.
+- [Hazelcast](https://hazelcast.org) - Highly scalable in-memory datagrid with a free open-source version.
 - [Hystrix](https://github.com/Netflix/Hystrix) - Provides latency and fault tolerance.
 - [JGroups](http://www.jgroups.org) - Toolkit for reliable messaging and cluster creation.
 - [Orbit](http://www.orbit.cloud) - Virtual actors; adds another level of abstraction to traditional actors.
@@ -243,13 +243,13 @@
 
 *Tools that handle the distribution of applications in native formats.*
 
-- [Bintray ![c]](https://bintray.com) - Version control for binaries that handle publishing. Compatible with Maven or Gradle, with a free plan for open-source software as well as several business plans.
+- [Bintray](https://bintray.com) - Version control for binaries that handle publishing. Compatible with Maven or Gradle, with a free plan for open-source software as well as several business plans.
 - [Boxfuse](https://boxfuse.com) - Deployment of JVM applications to AWS using the principles of immutable infrastructure.
 - [Capsule](http://www.capsule.io) - Simple and powerful packaging and deployment. A fat JAR on steroids, or a "Docker for Java" that supports JVM-optimized containers.
 - [Central Repository](https://search.maven.org) - Largest binary component repository available as a free service to the open-source community. Default used by Apache Maven, and available in all other build tools.
 - [IzPack](http://izpack.org) - Setup authoring tool for cross-platform deployments.
 - [JitPack](https://jitpack.io) - Easy-to-use package repository for GitHub. Builds Maven/Gradle projects on demand and publishes ready-to-use packages.
-- [Nexus ![c]](https://www.sonatype.com/nexus/solution-overview) - Binary management with proxy and caching capabilities.
+- [Nexus](https://www.sonatype.com/nexus/solution-overview) - Binary management with proxy and caching capabilities.
 - [packr](https://github.com/libgdx/packr) - Packs JARs, assets and the JVM for native distribution on Windows, Linux and Mac OS X.
 - [really-executable-jars-maven-plugin](https://github.com/brianm/really-executable-jars-maven-plugin) - Maven plugin for making self-executing JARs.
 
@@ -355,7 +355,7 @@
 *Integrated development environments that try to simplify several aspects of development.*
 
 - [Eclipse](https://www.eclipse.org) - Established open-source project with support for lots of plugins and languages.
-- [IntelliJ IDEA ![c]](https://www.jetbrains.com/idea) - Supports many JVM languages and provides good options for Android development. The commercial edition targets the enterprise sector.
+- [IntelliJ IDEA](https://www.jetbrains.com/idea) - Supports many JVM languages and provides good options for Android development. The commercial edition targets the enterprise sector.
 - [NetBeans](https://netbeans.org) - Provides integration for several Java SE and EE features, from database access to HTML5.
 - [Visual Studio Code](https://code.visualstudio.com/docs/languages/java) - Provides Java support for lightweight projects with a simple, modern workflow by using extensions from the internal marketplace.
 
@@ -500,25 +500,25 @@
 
 *Tools that monitor applications in production.*
 
-- [AppDynamics ![c]](https://www.appdynamics.com) - Performance monitor.
+- [AppDynamics](https://www.appdynamics.com) - Performance monitor.
 - [Automon](https://github.com/stevensouza/automon) - Combines the power of AOP with monitoring and/or logging tools.
-- [BugSnag ![c]](https://www.bugsnag.com) - Exception and error monitoring with an integration of several third party tools for a better workflow and a free hobbyist tier.
+- [BugSnag](https://www.bugsnag.com) - Exception and error monitoring with an integration of several third party tools for a better workflow and a free hobbyist tier.
 - [LeakCanary](https://github.com/square/leakcanary) - Memory leak detection.
 - [Failsafe Actuator](https://github.com/zalando-incubator/failsafe-actuator) - Out of the box monitoring of Failsafe Circuit Breaker in Spring-Boot environment.
 - [Glowroot](https://glowroot.org) - Open-source Java APM.
 - [inspectIT](http://www.inspectit.rocks) - Captures detailed run-time information via hooks that can be changed on the fly. It supports tracing over multiple systems via the OpenTracing API and can correlate the data with end user monitoring.
-- [Instrumental ![c]](https://instrumentalapp.com) - Real-time Java application performance monitoring. A commercial service with free development accounts.
+- [Instrumental](https://instrumentalapp.com) - Real-time Java application performance monitoring. A commercial service with free development accounts.
 - [JavaMelody](https://github.com/javamelody/javamelody) - Performance monitoring and profiling.
 - [jmxtrans](https://github.com/jmxtrans/jmxtrans) - Connect to multiple JVMs and query them for their attributes via JMX. Its query language is based on JSON, which allows non-Java programmers to access the JVM attributes. Supports different output writes, including Graphite, Ganglia, and StatsD.
 - [Jolokia](https://jolokia.org) - JMX over REST.
 - [Kamon](http://www.kamon.io) - Tool for monitoring applications running on the JVM.
 - [Metrics](http://metrics.dropwizard.io) - Expose metrics via JMX or HTTP and send them to a database.
-- [New Relic ![c]](https://newrelic.com) - Performance monitor.
+- [New Relic](https://newrelic.com) - Performance monitor.
 - [nudge4j](https://github.com/lorenzoongithub/nudge4j) - Remote developer console from the browser for Java 8 via bytecode injection.
-- [OverOps ![c]](https://www.overops.com) - In-production error monitoring and debugging.
+- [OverOps](https://www.overops.com) - In-production error monitoring and debugging.
 - [Pinpoint](https://github.com/naver/pinpoint) - Open-source APM tool.
 - [Prometheus](https://prometheus.io) - Provides a multi-dimensional data model, DSL, autonomous server nodes and much more.
-- [SPM ![c]](https://sematext.com/spm) - Performance monitor with distributing transaction tracing for JVM apps.
+- [SPM](https://sematext.com/spm) - Performance monitor with distributing transaction tracing for JVM apps.
 - [Stagemonitor](https://github.com/stagemonitor/stagemonitor) - Open-source performance monitoring and transaction tracing for JVM apps.
 - [Sysmon](https://github.com/palantir/Sysmon) - Lightweight platform monitoring tool for Java VMs.
 - [zipkin](https://zipkin.io) - Distributed tracing system which gathers timing data needed to troubleshoot latency problems in microservice architectures.
@@ -572,12 +572,12 @@
 
 *Java platform as a service.*
 
-- [AWS Elastic Beanstalk ![c]](https://aws.amazon.com/elasticbeanstalk) - AWS-based, with support for Tomcat and Jetty.
-- [AWS Lambda ![c]](https://aws.amazon.com/lambda) - Serverless computation.
-- [Google App Engine ![c]](https://cloud.google.com) - PaaS on Google's infrastructure.
-- [Heroku ![c]](https://www.heroku.com) - Abstract computing environments.
-- [Jelastic ![c]](https://jelastic.com) - Supports Tomcat, Jetty, GlassFish, JBoss, TomEE and WildFly.
-- [OpenShift Enterprise ![c]](https://www.openshift.com) - On-premise solution.
+- [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) - AWS-based, with support for Tomcat and Jetty.
+- [AWS Lambda](https://aws.amazon.com/lambda) - Serverless computation.
+- [Google App Engine](https://cloud.google.com) - PaaS on Google's infrastructure.
+- [Heroku](https://www.heroku.com) - Abstract computing environments.
+- [Jelastic](https://jelastic.com) - Supports Tomcat, Jetty, GlassFish, JBoss, TomEE and WildFly.
+- [OpenShift Enterprise](https://www.openshift.com) - On-premise solution.
 
 ### PDF
 
@@ -588,23 +588,23 @@
 - [Dynamic Jasper](http://dynamicjasper.com) - Abstraction layer to JasperReports.
 - [DynamicReports](http://dynamicreports.org) - Simplifies JasperReports.
 - [flyingsaucer](https://github.com/flyingsaucerproject/flyingsaucer) - XML/XHTML and CSS 2.1 renderer.
-- [iText ![c]](https://itextpdf.com) - Creates PDF files programmatically.
+- [iText](https://itextpdf.com) - Creates PDF files programmatically.
 - [JasperReports](https://community.jaspersoft.com/project/jasperreports-library) - Complex reporting engine.
 
 ### Performance analysis
 
 *Tools for performance analysis, profiling and benchmarking.*
 
-- [fastThread ![c]](http://fastthread.io) - Analyze and visualize thread dumps with a free cloud-based upload interface.
-- [GCeasy ![c]](http://gceasy.io) - Tool to analyze and visualize GC logs. It provides a free cloud-based upload interface.
+- [fastThread](http://fastthread.io) - Analyze and visualize thread dumps with a free cloud-based upload interface.
+- [GCeasy](http://gceasy.io) - Tool to analyze and visualize GC logs. It provides a free cloud-based upload interface.
 - [honest-profiler](https://github.com/RichardWarburton/honest-profiler) - A low-overhead, bias-free sampling profiler.
 - [jHiccup](https://github.com/giltene/jHiccup) - Logs and records platform JVM stalls.
 - [JITWatch](https://github.com/AdoptOpenJDK/jitwatch) - Analyze the JIT compiler optimisations made by the HotSpot JVM.
 - [JMH](http://openjdk.java.net/projects/code-tools/jmh) - a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks written in Java and other languages targeting the JVM.
-- [JProfiler ![c]](https://www.ej-technologies.com/products/jprofiler/overview.html) - Database profiling for JDBC, JPA and NoSQL, with JEE support.
+- [JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html) - Database profiling for JDBC, JPA and NoSQL, with JEE support.
 - [LatencyUtils](https://github.com/LatencyUtils/LatencyUtils) - Utilities for latency measurement and reporting.
-- [XRebel ![c]](https://zeroturnaround.com/software/xrebel) - Real-time profiling for web applications, with an in-browser widget.
-- [YourKit Java Profiler ![c]](https://www.yourkit.com/features) - Profiler for any application running on the JVM.
+- [XRebel](https://zeroturnaround.com/software/xrebel) - Real-time profiling for web applications, with an in-browser widget.
+- [YourKit Java Profiler](https://www.yourkit.com/features) - Profiler for any application running on the JVM.
 
 ### Platform
 
