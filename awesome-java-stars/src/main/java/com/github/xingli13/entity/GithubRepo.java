@@ -22,7 +22,6 @@ public class GithubRepo implements Comparable {
 		this.fork = Integer.parseInt(fork.replace(",", "").trim());
 	}
 
-	@Override
 	public int compareTo(Object o) {
 		GithubRepo repo = ((GithubRepo) o);
 		if (this.star > repo.getStar()) {

@@ -4,11 +4,14 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -48,5 +51,14 @@ public class BasicUrlsTest {
 		// Write code here that turns the phrase above into concrete actions
 		assertThat(arg1).isEqualTo(contain? "yes":"no");
 	}
+	@Test
+	public void testMatch(){
+		String pattern = "https://github\\.com/[^/]*/[^/]*";
+		assertThat("https://github.com/swagger-api").doesNotMatch(pattern);
+		assertThat("https://github.com/swagger-api/swagger-node").matches(pattern);
+		assertThat("https://www.google.com/search").doesNotMatch(pattern);
+		assertThat("https://github.com/jbeard4/SCION/wiki/SCION-vs.-SCXML-Comparison").doesNotMatch(pattern);
+//		assertThat()
 
+	}
 }
