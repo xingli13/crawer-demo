@@ -23,7 +23,7 @@ public class AwesomeJavaProcessor implements PageProcessor {
 	private final static String BING = "bing";
 	private Site site = Site.me()
 			.setTimeOut(10000)
-			.setRetryTimes(3);
+			.setRetryTimes(5);
 //			.setSleepTime(1000);
 
 	@Override
@@ -50,8 +50,6 @@ public class AwesomeJavaProcessor implements PageProcessor {
 		}
 	}
 
-	// TODO: 2018/10/22 异常处理
-	// TODO: 2018/10/22 dao mysql
 
 	@Override
 	public Site getSite() {
@@ -61,7 +59,7 @@ public class AwesomeJavaProcessor implements PageProcessor {
 		for (Selectable node : select.nodes()) {
 			String author = node.regex("https://github\\.com/(\\w+)/.*").toString();
 			// topic 不是一个author
-			if ("topic".equals(author)){
+			if ("topic".equals(author) || "topics".equals(author)){
 				continue;
 			}
 			String str = node.toString();

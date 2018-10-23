@@ -8,7 +8,7 @@ import com.github.xingli13.entity.GithubRepo;
  */
 public class GithubRepoDao {
 	public static boolean insertRepo(GithubRepo repo) {
-		String sql = "INSERT INTO REPO (NAME, AUTHOR, URL, STAR, FORK) VALUES (?,?,?,?,?)";
+		String sql = "INSERT INTO GITHUB_REPO (NAME, AUTHOR, URL, STAR, FORK) VALUES (?,?,?,?,?)";
 		int key = BaseDao.insert(sql, repo.getName(), repo.getAuthor(), repo.getUrl(), repo.getStar(), repo.getFork());
 		return key > 0;
 	}
