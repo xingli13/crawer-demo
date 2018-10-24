@@ -9,5 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>awesome-java-stars</artifactId>
+    <artifactId>douban-book-crawer</artifactId>
+
+
 </project>
